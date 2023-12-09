@@ -1,5 +1,6 @@
+import AppView from "@/views/AppView";
 
 export default function HomePage() {
 
-  return <>Hello</>
+  return <AppView />
 }

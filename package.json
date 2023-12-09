@@ -13,7 +13,8 @@
     "@vanilla-extract/next-plugin": "^2.3.2",
     "next": "14.0.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "remixicon": "^3.6.0"
   },
   "devDependencies": {
     "@types/node": "^20",

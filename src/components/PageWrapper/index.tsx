@@ -1,10 +1,7 @@
-
 interface PageWrapperInterface {
-  children: React.ReactNode
+  children: React.ReactNode;
 }
 
 export default function PageWrapper({ children }: PageWrapperInterface) {
-  return <>
-    {children}
-  </>
+  return <>{children}</>;
 }
