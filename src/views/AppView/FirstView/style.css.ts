@@ -3,8 +3,7 @@ import { globalTheme } from "../style.css";
 
 export const wrapperStyles = style({
   display: "flex",
-  width: "100vw",
-  height: "100vh",
+  flex: 1,
   background: `linear-gradient(103deg, ${globalTheme.color.white} 49.07%, ${globalTheme.color.primary.dark} 104.96%)`,
   justifyContent: "space-between",
 });
@@ -21,9 +20,9 @@ export const photoWrapperStyles = style({
 export const textWrapperStyles = style({
   display: "flex",
   flexDirection: "column",
-  width: "100%",
   justifyContent: "center",
   marginLeft: 100,
+  flex: 1,
 });
 
 export const titleStyles = style({
@@ -33,7 +32,7 @@ export const titleStyles = style({
 });
 
 export const subtitleStyles = style({
-  fontSize: "3rem",
+  fontSize: "2.5rem",
   marginRight: 100,
   marginTop: 10,
 });

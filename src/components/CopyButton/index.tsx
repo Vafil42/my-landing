@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import Icon from "../Icon";
 import { buttonStyles } from "./style.css";
 
@@ -12,10 +12,15 @@ interface CopyButtonInterface {
 export const CopyButton = ({ copyText, size }: CopyButtonInterface) => {
   const [copied, setCopied] = useState(false);
 
-  const handleCopyClick = () => {
+  const handleCopyClick = useCallback(() => {
     navigator.clipboard.writeText(copyText);
+
     setCopied(true);
-  };
+
+    setTimeout(() => {
+      setCopied(false);
+    }, 2000);
+  }, [copyText]);
 
   return (
     <button onClick={handleCopyClick} className={buttonStyles}>

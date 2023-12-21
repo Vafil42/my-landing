@@ -6,8 +6,8 @@ export const wrapperStyles = style({
   flexDirection: "column",
   alignItems: "center",
   backgroundColor: globalTheme.color.white,
-  width: "27vw",
   borderRadius: 5,
+  flex: 1,
 });
 
 export const titleStyles = style({

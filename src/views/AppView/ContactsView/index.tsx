@@ -1,10 +1,10 @@
 import { CopyButton } from "@/components/CopyButton";
 import View from "@/components/View";
-import Card from "./Card";
+import Card, { CardInterface } from "./Card";
 import { rowStyles, wrapperStyles } from "./style.css";
 
 export default function ContactsView() {
-  const links = [
+  const links: CardInterface[][] = [
     [
       {
         text: "Телефон: +7(915)653-38-02",
@@ -19,18 +19,22 @@ export default function ContactsView() {
       {
         text: "Telegram",
         copy: "https://t.me/dpunk69",
+        isLink: true,
       },
       {
         text: "GitHub",
         copy: "https://github.com/Vafil42",
+        isLink: true,
       },
       {
         text: "Efset",
         copy: "https://efset.ru",
+        isLink: true,
       },
       {
         text: "LeetCode",
         copy: "https://leetcode.com/Vafil42/",
+        isLink: true,
       },
     ],
   ];
@@ -42,9 +46,9 @@ export default function ContactsView() {
             {row.map((link, index) => (
               <Card
                 key={index}
-                title={link.text}
+                text={link.text}
                 copy={link.copy}
-                link={link.copy}
+                isLink={link.isLink}
               />
             ))}
           </div>

@@ -1,18 +1,22 @@
 import { CopyButton } from "@/components/CopyButton";
 import { linkStyles, wrapperStyles } from "./style.css";
 
-interface CardInterface {
-  title: string;
-  link: string;
+export interface CardInterface {
+  text: string;
   copy: string;
+  isLink?: true;
 }
 
-export default function Card({ title, link, copy }: CardInterface) {
+export default function Card({ text, copy, isLink }: CardInterface) {
   return (
     <div className={wrapperStyles}>
-      <a href={link} target="_blank" rel="noreferrer" className={linkStyles}>
-        {title}
-      </a>
+      {isLink ? (
+        <a href={copy} target="_blank" rel="noreferrer" className={linkStyles}>
+          {text}
+        </a>
+      ) : (
+        <span className={linkStyles}>{text}</span>
+      )}
       <CopyButton copyText={copy} size="2x" />
     </div>
   );
