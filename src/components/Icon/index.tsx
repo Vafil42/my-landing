@@ -1,7 +1,7 @@
 import "remixicon/fonts/remixicon.css";
 
 interface IconInterface {
-  type: "git-branch-line";
+  type: "git-branch-line" | "clipboard-line" | "check-line";
   size?: "1x" | "1.5x" | "2x" | "2.5x" | "3x";
 }
 

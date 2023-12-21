@@ -7,7 +7,6 @@ export const wrapperStyles = style({
   alignItems: "center",
   backgroundColor: "white",
   borderRadius: 5,
-  marginTop: 50,
 });
 
 export const headerStyles = style({

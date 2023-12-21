@@ -1,6 +1,7 @@
+import View from "@/components/View";
 import Card from "./Card";
 
-import { wrapperStyles, titleStyles, cardsWrapperStyles } from "./style.css";
+import { cardsWrapperStyles } from "./style.css";
 
 export default function StackView() {
   const cards = [
@@ -23,13 +24,12 @@ export default function StackView() {
   ];
 
   return (
-    <div className={wrapperStyles}>
-      <div className={titleStyles}>Мой стэк</div>
+    <View title="Мой стэк" id="stack">
       <div className={cardsWrapperStyles}>
         {cards.map((card, index) => (
           <Card key={index} title={card.title} list={card.list} />
         ))}
       </div>
-    </div>
+    </View>
   );
 }

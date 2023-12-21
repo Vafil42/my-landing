@@ -1,5 +1,6 @@
 import Card, { CardInterface } from "./Card";
-import { titleStyles, wrapperStyles, cardsWrapperStyles } from "./style.css";
+import { cardsWrapperStyles } from "./style.css";
+import View from "@/components/View";
 
 export default function ExpirienceView() {
   const cards: CardInterface[] = [
@@ -17,13 +18,12 @@ export default function ExpirienceView() {
   ];
 
   return (
-    <div className={wrapperStyles}>
-      <div className={titleStyles}>Мой опыт</div>
+    <View title="Мой опыт" id="expirience">
       <div className={cardsWrapperStyles}>
         {cards.map((card, index) => (
           <Card key={index} {...card} />
         ))}
       </div>
-    </div>
+    </View>
   );
 }

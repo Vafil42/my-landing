@@ -28,7 +28,7 @@ export const textWrapperStyles = style({
 
 export const titleStyles = style({
   fontSize: "7rem",
-  borderBottom: `5px solid ${globalTheme.color.primary.light}`,
+  borderBottom: `5px solid ${globalTheme.color.primary.dark}`,
   width: "max-content",
 });
 

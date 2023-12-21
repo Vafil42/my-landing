@@ -2,19 +2,27 @@ import {
   createGlobalTheme,
   globalStyle,
   globalFontFace,
+  style,
 } from "@vanilla-extract/css";
+
+export const wrapperStyles = style({
+  display: "flex",
+  flexDirection: "column",
+  gap: 100,
+});
 
 export const globalTheme = createGlobalTheme(":root", {
   color: {
     primary: {
-      light: "#F9BB72",
-      dark: "#F8A442",
+      light: "#B38EC8",
+      dark: "#A566C8",
     },
     white: "#FFF",
   },
   textColor: {
-    black: "black",
+    black: "2A093C",
     grey: "grey",
+    white: "#FFF",
   },
 });
 
@@ -28,5 +36,6 @@ globalStyle("body, html", {
   fontSize: "62.5%",
   fontFamily: "ubuntu-mono",
   backgroundColor: globalTheme.color.primary.light,
-  paddingBottom: 500,
+  paddingBottom: 100,
+  color: globalTheme.textColor.black,
 });
