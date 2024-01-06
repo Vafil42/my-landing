@@ -31,9 +31,3 @@ export const linksWrapperStyles = style({
   flexDirection: "row",
   gap: "6rem",
 });
-
-export const linkStyles = style({
-  color: globalTheme.textColor.black,
-  textDecoration: "none",
-  cursor: "pointer",
-});

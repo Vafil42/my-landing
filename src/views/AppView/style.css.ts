@@ -36,6 +36,6 @@ globalStyle("body, html", {
   fontSize: "62.5%",
   fontFamily: "ubuntu-mono",
   backgroundColor: globalTheme.color.primary.light,
-  paddingBottom: 100,
+  paddingBottom: 50,
   color: globalTheme.textColor.black,
 });

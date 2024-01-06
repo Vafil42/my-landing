@@ -12,7 +12,7 @@ interface FirstViewInterface { }
 
 export default function FirstView({ }: FirstViewInterface) {
   return (
-    <div className={wrapperStyles}>
+    <div className={wrapperStyles} id="main">
       <div className={textWrapperStyles}>
         <span className={titleStyles}>Козенов Даниил</span>
         <span className={subtitleStyles}>

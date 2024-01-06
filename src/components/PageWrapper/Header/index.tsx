@@ -1,37 +1,39 @@
 import Photo from "@/components/Photo";
 import {
   headerStyles,
-  linkStyles,
   linksWrapperStyles,
   logoStyles,
   wrapperStyles,
 } from "./style.css";
+import AnchorLink from "@/components/AnchorLink";
 
 export default function Header() {
   const links = [
     {
       text: "Стэк",
-      href: "#stack",
+      href: "stack",
     },
     {
       text: "Опыт",
-      href: "#expirience",
+      href: "expirience",
     },
     {
       text: "Контакты",
-      href: "#contacts",
+      href: "contacts",
     },
   ];
 
   return (
     <header className={headerStyles}>
       <div className={wrapperStyles}>
-        <Photo src="/logo.svg" imgClassName={logoStyles} />
+        <AnchorLink href="main">
+          <Photo src="/logo.svg" imgClassName={logoStyles} />
+        </AnchorLink>
         <div className={linksWrapperStyles}>
           {links.map((item, index) => (
-            <a key={index} href={item.href} className={linkStyles}>
+            <AnchorLink key={index} href={item.href}>
               {item.text}
-            </a>
+            </AnchorLink>
           ))}
         </div>
       </div>
