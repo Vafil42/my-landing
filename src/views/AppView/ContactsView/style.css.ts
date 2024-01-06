@@ -9,6 +9,13 @@ export const wrapperStyles = style({
 
 export const rowStyles = style({
   display: "flex",
-  flexDirection: "row",
   gap: 16,
+  "@media": {
+    "screen and (orientation: portrait)": {
+      flexDirection: "column",
+    },
+    "screen and (orientation: landscape)": {
+      flexDirection: "row",
+    },
+  },
 });

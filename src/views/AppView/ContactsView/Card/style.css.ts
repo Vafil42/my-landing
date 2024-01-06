@@ -15,5 +15,12 @@ export const wrapperStyles = style({
 export const linkStyles = style({
   color: globalTheme.textColor.black,
   textDecoration: "none",
-  fontSize: "3rem",
+  "@media": {
+    "screen and (orientation: portrait)": {
+      fontSize: "4rem",
+    },
+    "screen and (orientation: landscape)": {
+      fontSize: "3rem",
+    },
+  },
 });

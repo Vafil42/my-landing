@@ -16,9 +16,9 @@ export default function FirstView({ }: FirstViewInterface) {
       <div className={textWrapperStyles}>
         <span className={titleStyles}>Козенов Даниил</span>
         <span className={subtitleStyles}>
-          Приветствую! Меня зовут Даня, я Junior Fullstack разработчик с годом
+          Приветствую! Меня зовут Даниил, я Junior Fullstack разработчик с годом
           опыта. Я специализируюсь на современных JavaScript фреймворках, таких
-          как React и Next. Ниже вы можете ознакомиться с моими проектами и
+          как Nest и Next. Ниже вы можете ознакомиться с моими проектами и
           навыками.
         </span>
       </div>

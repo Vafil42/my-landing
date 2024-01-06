@@ -33,9 +33,16 @@ globalFontFace("ubuntu-mono", {
 globalStyle("body, html", {
   margin: 0,
   padding: 0,
-  fontSize: "62.5%",
   fontFamily: "ubuntu-mono",
   backgroundColor: globalTheme.color.primary.light,
   paddingBottom: 50,
   color: globalTheme.textColor.black,
+  "@media": {
+    "screen and (orientation: portrait)": {
+      fontSize: "31.25%",
+    },
+    "screen and (orientation: landscape)": {
+      fontSize: "62.5%",
+    },
+  },
 });

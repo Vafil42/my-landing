@@ -6,23 +6,41 @@ export const wrapperStyles = style({
   flex: 1,
   background: `linear-gradient(103deg, ${globalTheme.color.white} 49.07%, ${globalTheme.color.primary.dark} 104.96%)`,
   justifyContent: "space-between",
+  "@media": {
+    "screen and (orientation: portrait)": {
+      flexDirection: "column",
+    },
+    "screen and (orientation: landscape)": {
+      flexDirection: "row",
+    },
+  },
 });
 
 export const photoStyles = style({
-  height: "100vh",
+  width: "100%",
+  height: "100%",
+  objectFit: "contain",
 });
 
 export const photoWrapperStyles = style({
   display: "flex",
-  width: "max-content",
+  flex: 1,
 });
 
 export const textWrapperStyles = style({
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
-  marginLeft: 100,
   flex: 1,
+  "@media": {
+    "screen and (orientation: portrait)": {
+      marginLeft: 20,
+      marginTop: 100,
+    },
+    "screen and (orientation: landscape)": {
+      marginLeft: 100,
+    },
+  },
 });
 
 export const titleStyles = style({
@@ -33,6 +51,13 @@ export const titleStyles = style({
 
 export const subtitleStyles = style({
   fontSize: "2.5rem",
-  marginRight: 100,
   marginTop: 10,
+  "@media": {
+    "screen and (orientation: portrait)": {
+      marginRight: 20,
+    },
+    "screen and (orientation: landscape)": {
+      marginRight: 100,
+    },
+  },
 });

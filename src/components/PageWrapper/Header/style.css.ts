@@ -12,11 +12,19 @@ export const wrapperStyles = style({
   display: "flex",
   flexDirection: "row",
   fontSize: "3rem",
-  paddingLeft: 100,
-  paddingRight: 100,
   alignItems: "center",
   width: "auto",
   justifyContent: "space-between",
+  "@media": {
+    "screen and (orientation: portrait)": {
+      marginLeft: 20,
+      marginRight: 20,
+    },
+    "screen and (orientation: landscape)": {
+      marginLeft: 100,
+      marginRight: 100,
+    },
+  },
 });
 
 export const logoStyles = style({
