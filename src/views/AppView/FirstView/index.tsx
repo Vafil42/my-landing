@@ -14,7 +14,7 @@ export default function FirstView({ }: FirstViewInterface) {
   return (
     <div className={wrapperStyles} id="main">
       <div className={textWrapperStyles}>
-        <span className={titleStyles}>Козенов Даниил</span>
+        <span className={titleStyles}>Козенков Даниил</span>
         <span className={subtitleStyles}>
           Приветствую! Меня зовут Даниил, я Junior Fullstack разработчик с годом
           опыта. Я специализируюсь на современных JavaScript фреймворках, таких
