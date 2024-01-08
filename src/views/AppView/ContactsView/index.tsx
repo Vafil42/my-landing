@@ -28,7 +28,7 @@ export default function ContactsView() {
       },
       {
         text: "Efset",
-        copy: "https://efset.ru",
+        copy: "https://www.efset.org/cert/DRtm3N",
         isLink: true,
       },
       {
